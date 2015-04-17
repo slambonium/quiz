@@ -1,0 +1,357 @@
+/* style.css */
+
+/* sublime-text colors:
+  gray-black background: #272822
+  'body' below: #f92772
+  'font-family' below: #66d9ef
+  yellow'ish: #e6db74
+  comments: #75715e
+  green'ish: #a6e22d
+  purple'ish: #ae81ff
+  orange'ish: #fd9720
+  white'ish: #f8f8f2;
+
+  From pallette at: http://paletton.com/#uid=71D0u0kfSsS6dMmaX-JkBnRp3jl:
+  see also: Color palette by Paletton-sublime-yellow-based.com.html in root folder
+
+  Primary color:  
+  #FFFACE; #FFF7A8; #E6DB74; #BEB244; #9A8E21
+
+  Secondary color (1):  
+  #F3FBCB; #EAF8A3; #CDDF70; #A5B842; #829520
+
+  Secondary color (2):  
+  #D5ADD6; #B176B3; #934C96; #792D7C; #621664
+
+  Complement color: 
+  #C3B3DA; #987FB9; #73569C; #553581; #3D1E69
+*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #f8f8f2;
+  background-color: #272822;
+}
+
+
+header {
+  /*border: 1px solid #272822;*/
+  text-align: center;
+  /* background: color image position/size repeat origin clip attachment initial|inherit; */
+  background: url('../images/binary-code-63529_1920-gradient-sublime-text.jpg') center center no-repeat;
+  /*box-shadow: none|h-shadow v-shadow blur spread color |inset|initial|inherit;*/
+  /*box-shadow: 0 0 1rem 1rem #ff0 inset;*/
+  height: 330px;
+  padding-top: 5.5rem;
+  /*border-top: 1rem solid rgba(0,0,0,0.5);
+  border-bottom: 1rem solid rgba(0,0,0,0.5);*/
+  /*border: 1rem solid #272822;*/
+}
+
+header h1 {
+  /*border: 1px solid orange;*/
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3.75rem;
+  width: 46rem;
+  margin: 0 auto;
+  color: #e6db74;
+  background-color: #272822;
+  padding: 1.5rem;
+  /*margin-top: 5.5rem;*/
+  /*border-radius: 1rem;*/
+  border: 1px solid #444;
+  /*box-shadow: 0 0 1rem 1rem #dd0;*/
+  /*box-shadow: 1rem 1rem 1rem 0 rgba(0,0,0,0.5), 0 0 0.25 0.25 #ff0 inset;*/
+  /*box-shadow: inset -2px 3px 0px #a6e22d, 8px 8px 8px rgba(0,0,0,0.5), inset -1px 4px 4px 4px #75715e;*/
+  box-shadow: 12px 12px 12px rgba(0,0,0,0.55);
+}
+
+.quiz-types ul {
+  margin: 1rem auto;
+  /* width here will control the button width */
+  width: 120px;
+}
+
+.quiz-types ul li {
+  background-color: #272822;
+  border: 1px solid #75715e;
+  margin-bottom: 6px;
+  /*border-radius: 1rem;*/
+  /*box-shadow: inset 0 0 4px 4px #888;*/
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.55);
+}
+
+.quiz-types ul li:hover {
+  background-color: #000;
+  /*box-shadow: inset 0 4px 4px 0px #bbb;*/
+
+  /* use below shadow when clicked */
+  /*box-shadow: 1px 1px 4px rgba(0,0,0,0.65);*/
+}
+
+.quiz-types a, .quiz-types a:link, .quiz-types a.visited, footer a, footer a:link, footer a.visited {
+  text-decoration: none;
+  /* since elements such as span and a are not block elements, we need to
+     specify them as such in order to define width and height properties
+     otherwise they would be only as wide and tall as the content */
+  /*display: block;*/
+  /*width: 100%;*/
+  /*height: 40px;*/
+  /* notice that I set the height to 40px and then also set the 
+     line-height to 40px. Giving the CSS height: and line-height:
+     properties equal values like that is an easy little trick 
+     for vertically centering the text in each link or span. */
+  /* above comments apply when using anchor elements within <li></li>;
+     this layout has now switched to using <li></li> elements within
+     anchor tags */
+  line-height: 40px;
+}
+
+.quiz-types a:hover, .quiz-types a:active, footer a:hover, footer a:active {
+ text-decoration: underline;
+}
+
+section {
+  /*border: 1px solid green;*/
+  padding-top: 0.5rem;
+  height: 450px;
+  background-color: #f8f8f2;
+  color: #272822;
+  float: left;
+  /*border-radius: 1.5rem 1.5rem 0 0;*/
+  /*box-shadow: 0 4px 4px 0 #75715e inset;*/
+  position: relative;
+  /*top: -1.75rem;*/
+  text-align: center;
+  /*border: 1px solid #75715e;*/
+}
+
+section p {
+  line-height: 120%;
+}
+
+section.quiz-types {
+  /*background-color: #987FB9;*/
+  width: 20%;
+}
+
+#html {
+  color: #f92772;
+}
+
+#html5 {
+  color: #a6e22d;
+}
+
+#css {
+  color: #e6db74;
+}
+
+#css3 {
+  color: #66d9ef;
+}
+
+#js {
+  color: #fd9720;
+}
+
+#jquery {
+  color: #ae81ff;
+}
+
+#php {
+  color: #f8f8f2;
+}
+
+#sql {
+  color: #f92772;
+}
+
+section.content {
+  width: 55%;
+  border-left: 1px solid #75715e;
+  border-right: 1px solid #75715e;
+  overflow: auto;
+  /*min-width: 500px;*/
+}
+
+section.references {
+  /*background-color: #E6DB74;*/
+  width: 25%;
+}
+
+footer {
+  /*border: 1px solid blue;*/
+  background-color: #934C96;
+  color: #f8f8f2;
+  clear: both;
+  text-align: center;
+  /*margin-top: 2em;*/
+  padding: 1em 1rem;
+  font-size: 1em;
+}
+
+footer p, footer ul {
+  margin: 1rem 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+footer a {
+  color: #f8f8f2;
+}
+
+/* dynamic content related elements below here */
+
+div#dynamic-content {
+  border-bottom: 1px solid black;
+  text-align: left;
+  padding: 1rem;
+}
+
+div#dynamic-content h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+div#dynamic-content h3 {
+  font-size: 1.25rem;
+  font-style: bold;
+  margin-top: 1rem;
+}
+
+/* below will target #question-info, #results-summary, #results-detail */
+div#dynamic-content div {
+  background-color: #ddd;
+  padding: 1.0rem;
+
+}
+
+div#dymanic-content p {
+  margin: 1rem 0;
+}
+
+/* below will target p elements within #question-info, #results-summary, #results-detail */
+div#dynamic-content div p {
+  margin: 1rem 0;
+}
+
+/* trying to get the question text to be inline with the question number */
+div#dynamic-content div p.question-text {
+  display: inline-block;
+}
+
+div#dynamic-content div#question-info {
+
+}
+
+form {
+
+}
+
+input[type="radio"] {
+  margin: 0.5rem;
+}
+
+input[type="submit"], button {
+  margin-top: 1rem;
+  background-color: #fd9720;
+  color: #fff;
+  border: none;
+  padding: 0 1rem;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.55);
+  height: 40px;
+  line-height: 40px;
+}
+
+button#check-answers {
+  position: relative;
+  left: -10rem;
+}
+
+button#try-again {
+  position: relative;
+  right: -10rem;
+}
+
+.clear-float {
+  clear: both;
+}
+
+/* attempting to have ul#quantities li:nth-child(1), and ul#quantities li:nth-child(2) on same line and on opposite ends of line */
+div#dynamic-content ul#quantities li {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+div#dynamic-content ul#quantities li:nth-child(2) {
+  float: right;
+}
+
+#so-far {
+  clear: both;
+  margin-top: 1rem;
+}
+
+div#dynamic-content div#results-summary {
+  text-align: center;
+}
+
+div#dynamic-content div#results-detail {
+
+}
+
+.label {
+  font-weight: bold;
+}
+
+ul.answers, ul.answers li {
+  margin: 1rem;
+}
+
+ul.answers li {
+  display: none;
+}
+
+p.right-wrong {
+  font-weight: bold;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;  
+}
+
+.correct {
+  color: #0b0;
+}
+
+.incorrect {
+  color: #b00;
+}
+
+p.correct-answer {
+  display: none;
+}
+
+hr {
+  margin-top: 1.5rem;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.displayNone {
+  display: none;
+}
+
+/* dynamic content related elements above here */
+
+@media only screen and (max-width: 767px) {
+
+
+
+}
